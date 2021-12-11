@@ -85,7 +85,7 @@ buttons = [
 
 
 InlineKeyboardButton(
-            text="💙Updates💙", url="https:https://t.me/CrowdXStrike"
+            text="💙Updates💙", url="https://t.me/CrowdXStrike"
         ),
 
     ],
@@ -223,7 +223,7 @@ def start(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                  InlineKeyboardButton(text="𝙎𝙪𝙥𝙥𝙤𝙧𝙩", url="t.me/NekoXSupport")
+                  InlineKeyboardButton(text="𝙎𝙪𝙥𝙥𝙤𝙧𝙩", url="t.me/RemiSupport")
                   ],
                   [
                   InlineKeyboardButton(text="𝙐𝙥𝙙𝙖𝙩𝙚", url="https://t.me/CrowdXStrike")
