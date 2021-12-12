@@ -98,8 +98,16 @@ InlineKeyboardButton(
 
 
 HELP_STRINGS = """
-`Hey there! My name is` [Remi]("https://telegra.ph/file/6fb556db667331a61eda5.jpg") 
-I'm Remi bot and help admins manage their groups with Some Powerful Features! `Have a look at the following for an idea of some of the things I can help you with.`"""
+*Remi is here! 
+I Use My Powers To Help Admins To Manage Their Groups! 
+*Main* commands available :
+ • /help: PM's you this message.
+ • /help <module name>: PM's you info about that module.
+ • /settings:
+   • in PM: will send you your settings for all supported modules.
+   • in a group: will redirect you to pm, with all that chat's settings.
+For all command use /* [or](https://telegra.ph/file/6fb556db667331a61eda5.jpg) *!*
+"""
 
 START_IMG = "https://telegra.ph/file/deb2f79fa80f20a633a91.mp4"
 
