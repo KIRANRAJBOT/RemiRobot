@@ -21,7 +21,7 @@ BUTTONS = InlineKeyboardMarkup(
     )
   
   
-@pbot.on_message(filters.command(["repo"]))
+@pgram.on_message(filters.command(["repo"]))
 async def repo(pgram, update):
     await update.reply_text(
         text=REPO_TEXT,
