@@ -4,7 +4,7 @@ import time
 import re
 from sys import argv
 from typing import Optional
-
+import RemiRobot.modules.sql.users_sql as sql
 from RemiRobot import (ALLOW_EXCL, CERT_PATH, DONATION_LINK, LOGGER,
                           OWNER_ID, PORT, SUPPORT_CHAT, TOKEN, URL, WEBHOOK,
                           dispatcher, StartTime, telethn, updater, pgram)
