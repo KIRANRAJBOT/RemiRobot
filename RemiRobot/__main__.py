@@ -71,7 +71,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-              text="💘My Owner💘", url="https://t.me/Horimaya"),
+              text="💘 Repository 💘", url="https://GitHub.com/Hodacka/RemiRobot"),
      
     ],
     [
