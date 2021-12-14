@@ -55,7 +55,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 ────「 [{}](https://telegra.ph/file/83258a5d1a338b51b8a63.jpg) 」────
-*やあ! {} , Iam Remi❤️,
+*やあ! {} , I'm Remi💝,
 I am an Anime themed advance group management bot with a lot of Features.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 • *Uptime:* `{}`
@@ -82,11 +82,9 @@ buttons = [
     ],
     [
        InlineKeyboardButton(
-                    text="About Me 🎉", callback_data="gabi_"
-        ),
+            text="About Me 🎉", callback_data="gabi_"),
        InlineKeyboardButton(
-                    text="Yuichiro 📢", url="https://t.me/YuichiroNetwork"
-        ),
+            text="Yuichiro 📢", url="https://t.me/YuichiroNetwork"),
     ],
 ]
 
@@ -210,14 +208,14 @@ def start(update: Update, context: CallbackContext):
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
         else:
-               first_name = update.effective_user.first_name
-               update.effective_message.reply_text(
-               PM_START_TEXT.format(
+            first_name = update.effective_user.first_name
+            update.effective_message.reply_text(
+                PM_START_TEXT.format(
                     escape_markdown(context.bot.first_name),
                     escape_markdown(first_name),
                     escape_markdown(uptime),
                     sql.num_users(),
-                    sql.num_chats()),
+                    sql.num_chats()),                        
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
