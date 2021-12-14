@@ -4,7 +4,6 @@ import time
 import re
 from sys import argv
 from typing import Optional
-import RemiRobot.modules.sql.users_sql as sql
 
 from RemiRobot import (ALLOW_EXCL, CERT_PATH, DONATION_LINK, LOGGER,
                           OWNER_ID, PORT, SUPPORT_CHAT, TOKEN, URL, WEBHOOK,
@@ -57,10 +56,7 @@ PM_START_TEXT = """
 ────「 [{}](https://telegra.ph/file/83258a5d1a338b51b8a63.jpg) 」────
 *やあ! {} , I'm Remi💝,
 I am an Anime themed advance group management bot with a lot of Features.*
-➖➖➖➖➖➖➖➖➖➖➖➖➖
-• *Uptime:* `{}`
-• `{}` *users, across* `{}` *chats.*
-➖➖➖➖➖➖➖➖➖➖➖➖➖
+I'm enjoying with you Since `{}`
 ➛ Try The Help Buttons Below To Know My Abilities ✘
 ➛ Need To Know My Friend [Click Here](t.me/nekoxrobot) ✘
 """
@@ -212,9 +208,7 @@ def start(update: Update, context: CallbackContext):
                 PM_START_TEXT.format(
                     escape_markdown(context.bot.first_name),
                     escape_markdown(first_name),
-                    escape_markdown(uptime),
-                    sql.num_users(),
-                    sql.num_chats()),                        
+                    escape_markdown(uptime),                        
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
