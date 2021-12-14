@@ -64,22 +64,22 @@ I'm enjoying with you Since `{}`
 buttons = [
     [
                         InlineKeyboardButton(
-                            text="Add Me🎉",
+                            text="💓Add Me to your group💓",
                             url="t.me/RemitheRobot?startgroup=true"),
                     ],
                    [
-                       InlineKeyboardButton(text="Help🔐", callback_data="help_back"),
-                       InlineKeyboardButton(text="Support 🎊", url=f"https://t.me/{SUPPORT_CHAT}"),
+                       InlineKeyboardButton(text="Help ❤️", callback_data="help_back"),
+                       InlineKeyboardButton(text="Support 💞", url=f"https://t.me/{SUPPORT_CHAT}"),
                        InlineKeyboardButton(text="About Me 💌", callback_data="gabi_"),
                      ],
                     [                  
                        InlineKeyboardButton(
-                             text="Updates ✨",
+                             text="Updates 💗",
                              url=f"https://t.me/CrowdXstrike"),
                        InlineKeyboardButton(
-                             text="source 🧾",
-                             url="https://t.me/PegasusUpdates"),
-                       InlineKeyboardButton(text="Yuichiro 📢", url="https://t.me/YuichiroNetwork")
+                             text="source 💖",
+                             url="https://GitHub.com/Hodacka/RemiRobot"),
+                       InlineKeyboardButton(text="Network 💕", url="https://t.me/YuichiroNetwork")
                      ], 
     ]
 
