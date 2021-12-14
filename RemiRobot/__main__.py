@@ -62,31 +62,30 @@ I am an Anime themed advance group management bot with a lot of Features.*
 • `{}` *users, across* `{}` *chats.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 ➛ Try The Help Buttons Below To Know My Abilities ✘
+➛ Need To Know My Friend [Click Here](t.me/nekoxrobot) ✘
 """
 
 buttons = [
     [
-        InlineKeyboardButton(
-            text="Add Me 🎊",url="t.me/RemiTheRobot?startgroup=true"),
-        InlineKeyboardButton(
-              text="Help ✨", callback_data="help_back"),
-     
-    ],
-    [
-        InlineKeyboardButton(
-            text="Source 🧾", url="https://GitHub.com/Hodacka/RemiRobot"),
-        InlineKeyboardButton(
-            text="Support 💫", url="https://t.me/RemiSupport"),
-        InlineKeyboardButton(
-            text="Updates 💌", url="https:https://t.me/CrowdXStrike"),
-    ],
-    [
-       InlineKeyboardButton(
-            text="About Me 🎉", callback_data="gabi_"),
-       InlineKeyboardButton(
-            text="Yuichiro 📢", url="https://t.me/YuichiroNetwork"),
-    ],
-]
+                        InlineKeyboardButton(
+                            text="Add Me🎉",
+                            url="t.me/RemitheRobot?startgroup=true"),
+                    ],
+                   [
+                       InlineKeyboardButton(text="Help🔐", callback_data="help_back"),
+                       InlineKeyboardButton(text="Support 🎊", url=f"https://t.me/{SUPPORT_CHAT}"),
+                       InlineKeyboardButton(text="About Me 💌", callback_data="gabi_"),
+                     ],
+                    [                  
+                       InlineKeyboardButton(
+                             text="Updates ✨",
+                             url=f"https://t.me/CrowdXstrike"),
+                       InlineKeyboardButton(
+                             text="source 🧾",
+                             url="https://t.me/PegasusUpdates"),
+                       InlineKeyboardButton(text="Yuichiro 📢", url="https://t.me/YuichiroNetwork")
+                     ], 
+    ]
 
 
 HELP_STRINGS = """
@@ -366,7 +365,7 @@ def gabi_about_callback(update, context):
     query = update.callback_query
     if query.data == "gabi_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *Remi*, a Cute group management bot built to help you manage your group easily.
+            text=""" ℹ️ I'm *Remi*, a Cute group management bot built with Love By [Lovely boy](t.me/horimaya).
                  \n❍ I can restrict users.
                  \n❍ I can greet users with customizable welcome messages and even set a group's rules.
                  \n❍ I have an advanced anti-flood system.
@@ -374,6 +373,7 @@ def gabi_about_callback(update, context):
                  \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n❍ I check for admins' permissions before executing any command and more stuffs
                  \n\nIf you have any question about *Remi*, let us know at .""",
+                 \nBtw you need my Repo ? [Click Here](https://GitHub.com/Hodacka/RemiRobot)\n\nIf you have any question about *Remi*, let us know at @Remisupprt.""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
