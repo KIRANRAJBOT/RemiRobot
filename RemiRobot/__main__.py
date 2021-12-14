@@ -67,42 +67,25 @@ I am an Anime themed advance group management bot with a lot of Features.*
 buttons = [
     [
         InlineKeyboardButton(
-            text="💓ADD ME IN YOUR GROUP💓",url="t.me/RemiTheRobot?startgroup=true"),
-    ],
-    [
+            text="Add Me 🎊",url="t.me/RemiTheRobot?startgroup=true"),
         InlineKeyboardButton(
-              text="💗Help💗", callback_data="help_back"),
+              text="Help ✨", callback_data="help_back"),
      
     ],
     [
         InlineKeyboardButton(
-              text="💘My Owner💘", url="https://t.me/Horimaya"),
-     
+            text="Source 🧾", url="https://GitHub.com/Hodacka/RemiRobot"),
+        InlineKeyboardButton(
+            text="Support 💫", url="https://t.me/RemiSupport"),
+        InlineKeyboardButton(
+            text="Updates 💌", url="https:https://t.me/CrowdXStrike"),
     ],
     [
-        InlineKeyboardButton(
-            text="💞Check My Friend💞", url="https://t.me/NekoXRobot"),
-
-    ],
-    [
-        InlineKeyboardButton(
-            text="Source code", url="https://GitHub.com/Hodacka/RemiRobot"),
-
-    ],
-    [
-        InlineKeyboardButton(
-            text="🤍Bot Support🤍", url="https://t.me/RemiSupport"),
-          
-
-
-InlineKeyboardButton(
-            text="💙Updates💙", url="https:https://t.me/CrowdXStrike"
+       InlineKeyboardButton(
+                    text="About Me 🎉", callback_data="gabi_"
         ),
-
-    ],
-    [
-        InlineKeyboardButton(
-                    text="💚Support💚", url="t.me/CrowdStrikeChat"
+       InlineKeyboardButton(
+                    text="Yuichiro 📢", url="https://t.me/YuichiroNetwork"
         ),
     ],
 ]
@@ -227,8 +210,8 @@ def start(update: Update, context: CallbackContext):
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
         else:
-           first_name = update.effective_user.first_name
-           update.effective_message.reply_text(
+               first_name = update.effective_user.first_name
+               update.effective_message.reply_text(
                PM_START_TEXT.format(
                     escape_markdown(context.bot.first_name),
                     escape_markdown(first_name),
@@ -241,7 +224,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_animation(
-            START_IMG, caption= "<code>Remi is Here 💞\nI am Awake Since</code>: <code>{}</code>".format(
+            START_IMG, caption= "<b>Remi is Here 💞\nI am Awake Since</b>: <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
