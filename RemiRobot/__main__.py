@@ -211,8 +211,8 @@ def start(update: Update, context: CallbackContext):
                     escape_markdown(uptime),                        
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
-                timeout=5,
-                   )
+                timeout=60,
+            )
     else:
         update.effective_message.reply_animation(
             START_IMG, caption= "<b>Remi is Here 💞\nI am Awake Since</b>: <code>{}</code>".format(
