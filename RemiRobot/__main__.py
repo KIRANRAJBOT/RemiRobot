@@ -349,7 +349,7 @@ def remi_about_callback(update, context):
     query = update.callback_query
     if query.data == "remi_":
         query.message.edit_text(
-            text=""" ❤️ I'm *Remi*, a Cute group management bot built to help you manage your group easily.
+            text=""" ❤️ I'm *Remi*, a Cute group management bot built with Love by [Lovely Boy](T.me/Horimaya).
                  \n❍ I can restrict users.
                  \n❍ I can greet users with customizable welcome messages and even set a group's rules.
                  \n❍ I have an advanced anti-flood system.
@@ -357,8 +357,8 @@ def remi_about_callback(update, context):
                  \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n❍ I check for admins' permissions before executing any command and more stuffs
                  \n\n_bot licensed under the GNU General Public License v3.0_
-                 \nHere is the [💾Repository](https://github.com/Hodacka/RemiRobot).
-                 \n\nIf you have any question about remi, let us know at @RemiSupport .""",
+                 \nBtw you need my Repo ? [Click Here](https://GitHub.com/Hodacka/RemiRobot)\n\nIf you have any question about *Remi*, let us know at @Remisupprt."""
+ 
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
